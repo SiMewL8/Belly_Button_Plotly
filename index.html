@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bellybutton Biodiversity</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      body.dark-theme {
+        color: rgb(233, 216, 216);
+        background:rgb(17, 8, 0);
+        }
+      body.dark-theme a {
+        color: #82b62f;
+        }
+    </style>
   </head>
   <body class="bg-dark">
     <div class="container">
@@ -13,13 +22,14 @@
         <div class="col-md-12 jumbotron text-center">
           <h1>Belly Button Biodiversity Dashboard</h1>
           <p>Use the interactive charts below to explore the dataset</p>
+          <button class="btn-toggle" style="color:brown;">Toggle Dark Mode</button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-2">
           <div class="well">
             <h5>Test Subject ID #:</h5>
-            <select id="selDataset" onload="testcurrent(this.value)" onchange="optionChanged(this.value)"></select>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </div>
           <div class="panel panel-primary">
             <div class="panel-heading">
@@ -44,5 +54,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="static/js/plots.js"></script>
+    <script>
+      const darkbtn = document.querySelector(".btn-toggle");
+        darkbtn.addEventListener("click", function(){
+        document.body.classList.toggle("dark-theme");
+        console.log("Dark Mode Enabled")
+        });
+    </script>
   </body>
 </html>

@@ -15,6 +15,16 @@ function init() {
   
 init();
 
+function testcurrent () {
+  // xs = 940
+  // d3.select("#selDataset").value == 940
+  // console.log(xs + "testme222");
+  buildMetadata(940);
+  buildCharts(940);
+}
+
+testcurrent();
+
 
 // function testcurrent (xs) {
 //   d3.select("#selDataset").value == xs
@@ -193,9 +203,3 @@ function buildCharts(sample) {
 };
 
 
-function testcurrent (xs) {
-  d3.select("#selDataset").value == xs
-  console.log(xs + "testme222");
-  buildMetadata(xs);
-  buildCharts(xs);
-}
