@@ -16,6 +16,13 @@ function init() {
 init();
 
 
+// function testcurrent (xs) {
+//   d3.select("#selDataset").value == xs
+//   console.log(xs + "testme222");
+//   buildMetadata(xs);
+//   buildCharts(xs);
+// }
+
 // Base function refresh
 function optionChanged (newSample) {
     console.log(newSample);
@@ -33,7 +40,7 @@ function buildMetadata(sample) {
 
         PANEL.html("");
         Object.entries(result).forEach(([x,y]) => {
-            PANEL.append("h6").text((x + " : "+ y).toUpperCase());
+            PANEL.append("h6").text((x + ": "+ y).toUpperCase());
         })
 
         // belly button washing frequency for gauge chart
@@ -184,3 +191,11 @@ function buildCharts(sample) {
         Plotly.newPlot('bubble', data, layout);
     });
 };
+
+
+function testcurrent (xs) {
+  d3.select("#selDataset").value == xs
+  console.log(xs + "testme222");
+  buildMetadata(xs);
+  buildCharts(xs);
+}
