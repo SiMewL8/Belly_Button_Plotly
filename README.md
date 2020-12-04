@@ -1,8 +1,8 @@
 # Belly_Button_Plotly
 
-Helping Roza with plotting belly button bacteria samples and creating a live dashboard accessed by user input.
+Plotting belly button bacteria samples and creating a live dashboard accessed by user input.
 
-Link: https://simewl8.github.io/Belly_Button_Plotly/
+Live Dashboard Link: https://simewl8.github.io/Belly_Button_Plotly/
 
 Roza wanted to utilize her Belly Button data samples and program a functioning website where users, with anonymized IDs, could looks up their unique data to find the probable match for the bacteria used in the Improbable Beef Burger.  
 
